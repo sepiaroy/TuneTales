@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="app.css"/>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Pacifico&display=swap" rel="stylesheet">
+    <title>TuneTales</title>
+</head>
+<body>
+  <section>
+    <header>TuneTales</header>
+    <nav class="main-nav">
+      <ul class="navitems">
+        <li><span>LOGIN</span></li>
+        <li><span>CREATE ACCOUNT</span></li>
+      </ul>
+    </nav>
+  </section>
+
+  <div id="image-container">
+    <img src="photo-1495175448924-1d9a30c90a42.avif" alt="Background" />
+    <div class="fade-left"></div>
+    <div class="fade-right"></div>
+  </div>
+
+  <div class="search-bar">
+    <p class="search-caption">Enter the book name and author name:</p>
+    <div class="search">
+      <input id="book-name" type="text" placeholder="Book Name" />
+      <input id="author-name" type="text" placeholder="Author Name" />
+      <button id="search-button">
+        <svg viewBox="0 0 24 24">
+          <path d="M15.5 14h-.79l-.28-.27a6.471 6.471 0 001.48-5.34C15.15 5.6 12.3 3 9 3S2.85 5.6 2.09 8.39a6.5 6.5 0 0011.09 5.34l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6.5 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+        </svg>
+      </button>
+    </div>
+    <p class="search-warning">*Enter both book name and author name</p>
+  </div>
+
+  <div class="spinner"></div>
+  <div id="song-error">No Songs Found.</div>
+
+  <div id="song-results"></div>
+
+  <!-- <footer>
+    <div class="footer-items">
+      <p>CONTACT US:</p>
+    </div>
+  </footer> -->
+
+  <script src="app.js"></script>
+</body>
+</html>
